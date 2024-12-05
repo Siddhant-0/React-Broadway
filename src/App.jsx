@@ -1,26 +1,44 @@
-import Person from "./Person";
+import Score from "./Score";
+
+const playerData = [
+  {
+    id: 1,
+    name: "Shubham Man",
+    runs: 100,
+  },
+  {
+    id: 2,
+    name: "Unik Aryal",
+    runs: 200,
+  },
+  {
+    id: 3,
+    name: "Rajan Gurung",
+    runs: 300,
+  },
+  {
+    id: 4,
+    name: "Pratik Achharya",
+    runs: 10,
+  },
+  {
+    id: 5,
+    name: "Aditya Gurung",
+    runs: 10,
+  },
+];
 
 const App = () => {
   return (
-    <section
+    <div
       style={{
-        display: "flex",
-        flexWrap: "wrap",
-        gap: "1rem",
-        justifyContent: "center",
-        alignItems: "center",
+        gap: "2rem",
       }}
     >
-      <Person
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmbqTiWVJixPPYeBUVP2-eG0drSGjWS0wJng&s"
-        name="Shaktiman"
-      />
-      <Person image="\src\assets\cowboy.jpg" name="cowboy" />
-      <Person
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmbqTiWVJixPPYeBUVP2-eG0drSGjWS0wJng&s"
-        name="Shaktiman"
-      />
-    </section>
+      {playerData.map((item) => {
+        return <Score key={item.id} name={item.name} runs={item.runs} />;
+      })}
+    </div>
   );
 };
 
