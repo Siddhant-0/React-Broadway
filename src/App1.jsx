@@ -11,6 +11,7 @@ const App = () => {
         alignItems: "center",
       }}
     >
+      App
       <Person
         image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmbqTiWVJixPPYeBUVP2-eG0drSGjWS0wJng&s"
         name="Shaktiman"

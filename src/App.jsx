@@ -4,7 +4,7 @@ const playerData = [
   {
     id: 1,
     name: "Shubham Man",
-    runs: 100,
+    runs: 20,
   },
   {
     id: 2,
@@ -32,6 +32,9 @@ const App = () => {
   return (
     <div
       style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
         gap: "2rem",
       }}
     >
