@@ -10,7 +10,7 @@ const Score = (props) => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        margin: "1 rem",
+        margin: "16px",
       }}
     >
       <h3>{props.name}</h3>
